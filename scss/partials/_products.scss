@@ -1,0 +1,97 @@
+/* INICIO DE PRODUCTOS */
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+
+    .productos-encabezado {
+        width: 100%;
+        text-align: center;
+    }
+
+    .productos-contenedor {
+        display: flex;
+        justify-content: center;
+
+        .tarjeta-producto {
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.5s ease-out;
+
+            .tarjeta-producto-contenido {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    transition: all 0.1s ease-out;
+
+                    @media (max-width: 991px) {
+                        border-radius: 10px;
+                        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+                    }
+                }
+
+                .tarjeta-producto-info {
+                    display: none;
+                    position: absolute;
+                    bottom: 0%;
+                    right: 0%;
+                    top: 0%;
+                    left: 0%;
+                    color: black;
+                    text-align: center;
+                    z-index: 10;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #FFF;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    @media (max-width: 425px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        border: 10px;
+                        position: absolute;
+                        bottom: 0%;
+                        right: 0%;
+                        top: 0%;
+                        left: 0%;
+                        color: black;
+                        text-align: center;
+                        z-index: 10;
+                        background: rgba(0, 0, 0, 0.5);
+                        color: #FFF;
+                        padding: 10px;
+                    }
+
+                    h4 {
+                        text-align: center;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                border-radius: 10px;
+            }
+
+            &:hover .tarjeta-producto-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: 10px;
+            }
+
+            &:hover img {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/* FIN DE PRODUCTOS */

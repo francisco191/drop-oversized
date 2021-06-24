@@ -1,0 +1,33 @@
+/* INICIO DE CONTACTO */
+
+#contacto {
+    text-align: center;
+    margin-top: 20px;
+
+    .contacto-datos {
+        width: 100%;
+        margin-bottom: 18px;
+        line-height: 25px;
+
+        img {
+            width: 10%;
+            text-align: center;
+        }
+
+        i {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+/* FIN DE CONTACTO */

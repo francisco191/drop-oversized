@@ -1,0 +1,393 @@
+/* Estilos generales del sitio */
+/* RESET DE ESTILOS */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  html {
+    font-size: 16px;
+    color: white;
+    background-color: black;
+  }
+  
+  /* Partials */
+  /* INICIO DE NAVBAR */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    height: 80px;
+  }
+  .navbar .container-navbar {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 1px 5px #858585;
+  }
+  .navbar .container-navbar .imagen-logo {
+    width: 8rem;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  .navbar .container-navbar .navbar-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+      color: white;
+  }
+
+  .navbar .container-navbar .navbar-links a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  .navbar .container-navbar .container-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 10%;
+    position: sticky;
+    top: 0;
+  }
+  @media (max-width: 991px) {
+    .navbar .container-navbar .container-social {
+      display: none;
+    }
+  }
+  .navbar .container-navbar .container-social .menu-social {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar .container-navbar .container-social .menu-social i {
+    font-size: 20px;
+    padding-right: 18px;
+    color: black;
+  }
+
+  .navbar .container-navbar .container-social .menu-social .fa-facebook {
+      color: white;
+  }
+
+  .navbar .container-navbar .container-social .menu-social .fa-instagram {
+      color: white;
+  }
+
+  .switch-theme-button {
+      border-radius: 10px;
+  }
+  .fa-moon {
+      color: black;
+      padding: 4px;
+  }
+  
+  /* FIN DE NAVBAR */
+  /* IINICIO QUIENES SOMOS */
+  #quienes-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  #quienes-somos h1 {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #quienes-somos .contenedor-texto-video {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 991px) {
+    #quienes-somos .contenedor-texto-video {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  #quienes-somos .contenedor-texto-video .quienes-somos-texto {
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+  @media (max-width: 991px) {
+    #quienes-somos .contenedor-texto-video .quienes-somos-texto {
+      width: 100%;
+    }
+  }
+  #quienes-somos .contenedor-texto-video .quienes-somos-texto p {
+    margin-bottom: 18px;
+  }
+  #quienes-somos .contenedor-texto-video .quienes-somos-texto h2 {
+    margin-bottom: 10px;
+  }
+  #quienes-somos .contenedor-texto-video .quienes-somos-imagen {
+    width: 50%;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    #quienes-somos .contenedor-texto-video .quienes-somos-imagen {
+      width: 100%;
+    }
+  }
+  #quienes-somos .contenedor-texto-video .quienes-somos-imagen video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* FIN QUIENES SOMOS */
+  /* INICIO DE PRODUCTOS */
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 0px;
+    background-color: rgb(20, 20, 20);
+  }
+  #productos .productos-encabezado {
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+  }
+  #productos .productos-contenedor {
+    display: flex;
+    justify-content: center;
+  }
+  #productos .productos-contenedor .tarjeta-producto {
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido {
+    position: relative;
+  }
+  #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido img {
+    width: 100%;
+    transition: all 0.1s ease-out;
+  }
+  @media (max-width: 991px) {
+    #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido img {
+      border-radius: 10px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
+  #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido .tarjeta-producto-info {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  @media (max-width: 425px) {
+    #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido .tarjeta-producto-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 10px;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      top: 0%;
+      left: 0%;
+      color: black;
+      text-align: center;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+    }
+  }
+  #productos .productos-contenedor .tarjeta-producto .tarjeta-producto-contenido .tarjeta-producto-info h4 {
+    text-align: center;
+  }
+  #productos .productos-contenedor .tarjeta-producto:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
+  }
+  #productos .productos-contenedor .tarjeta-producto:hover .tarjeta-producto-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 10px;
+    color: black;
+  }
+  #productos .productos-contenedor .tarjeta-producto:hover img {
+    border-radius: 10px;
+  }
+  
+  /* FIN DE PRODUCTOS */
+  /* INICIO DE FAQS */
+  #preguntas-frecuentes {
+    padding-top: 40px;
+    margin: 0px;
+    background-color: rgb(20, 20, 20);
+  }
+  #preguntas-frecuentes .preguntas-frecuentes-encabezado {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #preguntas-frecuentes span {
+    font-weight: 900;
+    color: black;
+  }
+
+  .accordion-item {
+      background-color: rgb(20, 20, 20);
+      border: 1px solid white;
+  }
+
+  .accordion-item h2 {
+    background-color: rgb(20, 20, 20);
+}
+
+.accordion-button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+
+  
+  /* FIN DE FAQS */
+  .newsletter {
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+  }
+  .newsletter h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+  .newsletter .container-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .newsletter .container-form .form-newsletter {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  .newsletter .container-form .form-newsletter .input-newsletter {
+    width: 50%;
+    border: 1px solid red;
+    background-color: black;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    color: black;
+  }
+  .newsletter .container-form .form-newsletter .send-button {
+    width: 40px;
+    height: 35px;
+    border: 1px solid red;
+    border-left: none;
+    background-color: #dddddd;
+    text-align: center;
+    color: black;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .fa-paper-plane {
+      color: black;
+  }
+  
+  /* INICIO DE CONTACTO */
+  #contacto {
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(20, 20, 20);
+  }
+  #contacto .contacto-datos {
+    width: 100%;
+    margin-bottom: 18px;
+    line-height: 25px;
+  }
+  #contacto .contacto-datos img {
+    width: 10%;
+    text-align: center;
+    border-radius: 15px;
+    padding-bottom: 6px;
+  }
+  #contacto .contacto-datos i {
+    font-size: 14px;
+    width: 100%;
+  }
+  #contacto .contacto-datos a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #contacto .contacto-datos ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #contacto .contacto-datos li {
+    list-style: none;
+  }
+  
+  /* FIN DE CONTACTO */
+  footer {
+    background-color: #ededed;
+    padding: 2px;
+  }
+  footer .copyright {
+    width: 100%;
+    color: rgb(20, 20, 20);
+  }
+
+  footer .copyright .tipografia {
+      color: rgb(20, 20, 20);
+  }
+  
+  .wpp-absolute i {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: #00bd00;
+    padding: 10px;
+    border-radius: 1000px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+  @media (max-width: 991px) {
+    .wpp-absolute i {
+      display: none;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
