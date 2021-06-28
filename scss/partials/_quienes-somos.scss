@@ -14,23 +14,24 @@
         text-align: center;
     }
 
-    .contenedor-texto-video {
+    .contenedor-texto {
+        width: 100%;
         display: flex;
-        align-items: center;
-
-        @media (max-width: 991px) {
-                flex-direction: column;
-                width: 100%;
-        }
+        justify-content: center;
+        text-align: center;
 
         .quienes-somos-texto {
-            width: 50%;
-            text-align: center;
+            width: 70%;
             font-size: 1rem;
             vertical-align: middle;
 
             @media (max-width: 991px) {
                 width: 100%;
+            }
+
+            img {
+                width: 40%;
+                margin: 25px;
             }
 
             p {
