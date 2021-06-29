@@ -17,20 +17,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
   margin-bottom: 2px;
-  background-color: #ededed;
+  background-color: #1f1e1e;
   padding-top: 0;
   padding-bottom: 4px;
 }
 .pagina-oficial small {
   width: 100%;
   text-align: center;
+  padding: 6px;
 }
 .pagina-oficial small a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .navbar {
@@ -42,7 +43,7 @@ html {
 }
 .navbar .container-navbar {
   background-color: #1f1e1e;
-  box-shadow: 0px 1px 5px #4d4d4d;
+  box-shadow: 0px 2px 5px #4d4d4d;
   width: 100%;
 }
 .navbar .container-navbar .imagen-logo {
